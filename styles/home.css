@@ -2,30 +2,34 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,400;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,700;1,300&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,400;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,400;0,700;1,300&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,400;1,700&display=swap");
+
 /* colors & font names */
 :root {
   --brand-base: #ff6b00;
   --social-links: #dbd8d7;
-  --white: #ffffff;
+  --white: #fff;
   --background: #1c1a19;
   --navbackground: #3c3a39;
-
   --primary-family: "Crete Round";
   --body-family: "Poppins";
   --general-family: "Roboto";
 }
+
 /* general styles */
 body {
   font-size: 100%;
 }
+
 * {
   margin: 0;
 }
+
 #wrapper {
   box-sizing: border-box;
   background: var(--background);
   color: var(--white);
 }
+
 /* navbar section */
 #nav {
   background: var(--navbackground);
@@ -35,9 +39,11 @@ body {
   justify-content: space-between;
   padding: 1em 2.2em;
 }
+
 .hum-menu {
   margin-top: 0.4em;
 }
+
 .menu {
   background: var(--white);
   list-style: none;
@@ -54,18 +60,21 @@ body {
   background: url("../images/background.svg") no-repeat 15.7em 27.2em;
   height: 72.4vh;
 }
+
 #welcome .intro {
   color: var(--brand-base);
   font-family: var(--primary-family);
   font-weight: 400;
   font-size: 3em;
 }
+
 #welcome .profession {
   font-family: var(--general-family);
   font-weight: 700;
   font-size: 1.4em;
   margin: 0.5em 0;
 }
+
 .description {
   font-family: var(--body-family);
   font-weight: 400;
@@ -73,14 +82,16 @@ body {
 
 /* social links */
 
-.socialLinks ul {
+.social-links ul {
   list-style: none;
   display: flex;
   margin-top: 1em;
 }
-.socialLinks ul li a {
+
+.social-links ul li a {
   color: var(--social-links);
 }
-.socialLinks ul li {
+
+.social-links ul li {
   padding: 0 0.4em;
 }
