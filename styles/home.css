@@ -57,7 +57,7 @@ body {
 #container {
   position: relative;
   padding: 10em 1.5em 0;
-  background: url("../images/background.svg") no-repeat 15.7em 27.2em;
+  background: url("../images/background.svg") no-repeat 15.7em 22.2em;
   height: 72.4vh;
 }
 
@@ -72,7 +72,7 @@ body {
   font-family: var(--general-family);
   font-weight: 700;
   font-size: 1.4em;
-  margin: 0.5em 0;
+  margin: 0.8em 0;
 }
 
 .description {
@@ -85,11 +85,12 @@ body {
 .social-links ul {
   list-style: none;
   display: flex;
-  margin-top: 1em;
+  margin-top: 1.2em;
 }
 
 .social-links ul li a {
   color: var(--social-links);
+  font-size: 1.5em;
 }
 
 .social-links ul li {
