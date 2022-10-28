@@ -5,11 +5,11 @@
 
 /* colors & font names */
 :root {
-  --brand-base: #ff6b00;
-  --social-links: #dbd8d7;
-  --white: #fff;
-  --background: #1c1a19;
-  --navbackground: #3c3a39;
+  --brand-base: .ff6b00;
+  --social-links: .dbd8d7;
+  --white: .fff;
+  --background: .1c1a19;
+  --navbackground: .3c3a39;
   --primary-family: "Crete Round";
   --body-family: "Poppins";
   --general-family: "Roboto";
@@ -24,7 +24,7 @@ body {
   margin: 0;
 }
 
-#wrapper {
+.wrapper {
   box-sizing: border-box;
   background: var(--background);
   color: var(--white);
@@ -61,14 +61,14 @@ body {
   background: url("../images/background.svg") no-repeat 15.7em 22.2em;
 }
 
-#welcome .intro {
+.welcome .intro {
   color: var(--brand-base);
   font-family: var(--primary-family);
   font-weight: 400;
   font-size: 3em;
 }
 
-#welcome .profession {
+.welcome .profession {
   font-family: var(--general-family);
   font-weight: 700;
   font-size: 1.4em;
