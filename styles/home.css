@@ -32,7 +32,7 @@ body {
 }
 
 /* navbar section */
-.nav {
+.header {
   background: var(--navbackground);
   font-family: var(--general-family);
   font-size: 0.8em;
