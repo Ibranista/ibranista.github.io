@@ -26,8 +26,8 @@ body {
 
 .wrapper {
   box-sizing: border-box;
-  background: var(--background) url("../images/background.svg") no-repeat 15.7em
-    22.2em;
+  background: var(--background) url("../images/background.svg") no-repeat 100%
+    100%;
   color: var(--white);
   height: 100vh;
 }
@@ -59,7 +59,6 @@ body {
 .container {
   position: relative;
   padding: 10em 1.5em 0;
-  height: 100vh;
 }
 
 .welcome .intro {
@@ -87,15 +86,9 @@ body {
   list-style: none;
   display: flex;
   margin-top: 1.2em;
+  flex-wrap: wrap;
 }
 
 .social-links ul li a {
-}
-
-.social-links ul li {
-  padding: 0 0.4em;
-}
-
-svg {
-  /* background: skyblue; */
+  padding: 0 1.2em 0 0;
 }
