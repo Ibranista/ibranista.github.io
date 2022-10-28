@@ -55,7 +55,7 @@ body {
 }
 
 /* main section */
-#container {
+.container {
   position: relative;
   padding: 10em 1.5em 0;
   background: url("../images/background.svg") no-repeat 15.7em 22.2em;
