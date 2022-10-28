@@ -26,7 +26,8 @@ body {
 
 .wrapper {
   box-sizing: border-box;
-  background: var(--background);
+  background: var(--background) url("../images/background.svg") no-repeat 15.7em
+    22.2em;
   color: var(--white);
   height: 100vh;
 }
@@ -58,8 +59,6 @@ body {
 .container {
   position: relative;
   padding: 10em 1.5em 0;
-  background: skyblue;
-  background: url("../images/background.svg") no-repeat 15.7em 22.2em;
   height: 100vh;
 }
 
