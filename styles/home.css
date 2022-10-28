@@ -90,10 +90,12 @@ body {
 }
 
 .social-links ul li a {
-  color: var(--social-links);
-  font-size: 1.5em;
 }
 
 .social-links ul li {
   padding: 0 0.4em;
+}
+
+svg {
+  /* background: skyblue; */
 }
