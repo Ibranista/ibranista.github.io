@@ -181,7 +181,7 @@ div.btn {
 }
 
 div.multi-post {
-  width: 30%;
+  width: fit-content;
 }
 
 div.btn > h3 {
