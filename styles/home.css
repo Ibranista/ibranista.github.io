@@ -297,46 +297,6 @@ ul.skills::before {
   padding-left: 1.5em;
 }
 
-/* get in touch section */
-
-.get-in-touch {
-  background: var(--white);
-  font-family: var(--work-desc);
-  font-weight: 700;
-  font-size: 1.3em;
-  text-align: center;
-  line-height: 44px;
-  width: 90%;
-  margin: 5em auto;
-}
-
-form.get-in-touch-form input {
-  border: none;
-  border-bottom: 1px solid var(--form-text);
-  width: 100%;
-  color: var(--form-text);
-  padding: 0.5em;
-}
-
-form > textarea {
-  background: var(--text-area);
-  border: none;
-  padding: 1em;
-  margin: 1em 0;
-}
-
-button.btn-get {
-  background: var(--brand-base);
-  color: var(--white);
-  font-family: var(--work-desc);
-  font-weight: 700;
-  font-size: 1.06em;
-  padding: 0.5em;
-  width: 50%;
-  text-align: center;
-  border: none;
-}
-
 /* footer section */
 footer {
   padding: 2em;
