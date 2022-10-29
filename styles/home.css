@@ -14,6 +14,8 @@
   --background: #1c1a19;
   --navbackground: #3c3a39;
   --langs: #8993a4;
+  --form-text: #979493;
+  --text-area: #fbf8f7;
   --primary-family: "Crete Round";
   --body-family: "Poppins";
   --general-family: "Roboto";
@@ -104,6 +106,7 @@ body {
   display: grid;
   grid-template-columns: minmax(auto, 90%);
   justify-content: center;
+  background: var(--background);
 }
 
 .recent-works {
@@ -260,3 +263,42 @@ ul.skills:before {
   padding-left: 1.5em;
 }
 
+/* get in touch section */
+
+.get-in-touch {
+  background: var(--white);
+  font-family: var(--work-desc);
+  font-weight: 700;
+  font-size: 1.3em;
+  text-align: center;
+  line-height: 44px;
+  width: 90%;
+  margin: 5em auto;
+}
+
+form.get-in-touch-form input {
+  border: none;
+  border-bottom: 1px solid var(--form-text);
+  width: 100%;
+  color: var(--form-text);
+  padding: 0.5em;
+}
+
+form > textarea {
+  background: var(--text-area);
+  border: none;
+  padding: 1em;
+  margin: 1em 0;
+}
+
+button.btn-get {
+  background: var(--brand-base);
+  color: var(--white);
+  font-family: var(--work-desc);
+  font-weight: 700;
+  font-size: 1.06em;
+  padding: 0.5em;
+  width: 50%;
+  text-align: center;
+  border: none;
+}
