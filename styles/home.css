@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,700;1,300&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,400;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,400;0,700;1,300&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,400;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Meera+Inimai&display=swap");
 
 /* colors & font names */
 :root {
@@ -17,6 +18,7 @@
   --body-family: "Poppins";
   --general-family: "Roboto";
   --work-desc: "Inter";
+  --languages: "Meera Inimai";
 }
 
 /* general styles */
@@ -180,3 +182,81 @@ div.btn > h3 {
   width: 100%;
   text-align: center;
 }
+
+/* about me section */
+
+.about-me {
+  background: var(--background) url(../images/about-background.svg) 100% 100%
+    no-repeat;
+  padding: 7em 1em;
+}
+
+.about-me > h1.about-title {
+  font-family: var(--primary-family);
+  font-size: 4.2em;
+  font-weight: 400;
+  color: var(--brand-base);
+}
+
+.about-me > p.about-desc {
+  font-family: var(--work-desc);
+  color: var(--white);
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 24px;
+  margin: 1.4em 0;
+}
+
+.about-me > div.about-btn {
+  background: var(--brand-base);
+  color: var(--white);
+  font-family: var(--work-desc);
+  font-weight: 700;
+  font-size: 1.06em;
+  padding: 0.5em;
+  width: 50%;
+  text-align: center;
+}
+
+/* language lists section */
+
+.knowledge-desc {
+  background: var(--background);
+}
+
+.knowledge-desc > ul {
+  list-style: none;
+  color: var(--white);
+  font-family: var(--languages);
+  line-height: 3em;
+  font-size: 1.3em;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 0.5em;
+}
+
+ul.language:before {
+  content: attr(data-header);
+  font-size: 120%;
+  font-weight: bold;
+  margin-left: -15px;
+  background: url(../images/language.svg) no-repeat 0.1em 0em;
+  padding-left: 1.5em;
+}
+ul.frameworks:before {
+  content: attr(data-header);
+  font-size: 120%;
+  font-weight: bold;
+  margin-left: -15px;
+  background: url(../images/frameworks.svg) no-repeat 0.1em 0em;
+  padding-left: 1.5em;
+}
+ul.skills:before {
+  content: attr(data-header);
+  font-size: 120%;
+  font-weight: bold;
+  margin-left: -15px;
+  background: url(../images/skills.svg) no-repeat 0.1em 0em;
+  padding-left: 1.5em;
+}
+
