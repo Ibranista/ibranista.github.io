@@ -34,8 +34,7 @@ body {
 
 .wrapper {
   box-sizing: border-box;
-  background: var(--background) url("../images/background.svg") no-repeat 100%
-    100%;
+  background: var(--background) url("../images/background.svg") no-repeat 100% 100%;
   color: var(--white);
   height: 100vh;
 }
@@ -88,6 +87,20 @@ body {
   font-weight: 400;
 }
 
+/* footer */
+footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-top: 1.2em;
+  flex-wrap: wrap;
+  padding-bottom: 1.2em;
+}
+
+footer ul li a {
+  padding: 0 1.2em 0 0;
+}
+
 /* social links */
 
 .social-links ul {
@@ -122,6 +135,7 @@ body {
   border-bottom: 2px solid #212121;
   margin-bottom: 1.6em;
 }
+
 figure .multi-post {
   width: 100%;
 }
@@ -132,6 +146,7 @@ figure .multi-post {
   align-items: center;
   margin-bottom: 1.5em;
 }
+
 .work-description {
   font-family: var(--primary-family);
   font-weight: 400;
@@ -139,6 +154,7 @@ figure .multi-post {
   align-self: flex-start;
   padding: 0.5em 0;
 }
+
 p.story-detail {
   font-family: var(--work-desc);
 }
@@ -158,9 +174,11 @@ p.story-detail {
   padding: 0.5em;
   margin-right: 0.8em;
 }
+
 div.btn {
   align-self: flex-start;
 }
+
 div.btn > h3 {
   font-family: var(--work-desc);
   font-size: 1.06em;
@@ -189,8 +207,7 @@ div.btn > h3 {
 /* about me section */
 
 .about-me {
-  background: var(--background) url(../images/about-background.svg) 100% 100%
-    no-repeat;
+  background: var(--background) url(../images/about-background.svg) 100% 100% no-repeat;
   padding: 7em 1em;
 }
 
@@ -239,28 +256,30 @@ div.btn > h3 {
   margin-top: 0.5em;
 }
 
-ul.language:before {
+ul.language::before {
   content: attr(data-header);
   font-size: 120%;
   font-weight: bold;
   margin-left: -15px;
-  background: url(../images/language.svg) no-repeat 0.1em 0em;
+  background: url(../images/language.svg) no-repeat 0.1em 0;
   padding-left: 1.5em;
 }
-ul.frameworks:before {
+
+ul.frameworks::before {
   content: attr(data-header);
   font-size: 120%;
   font-weight: bold;
   margin-left: -15px;
-  background: url(../images/frameworks.svg) no-repeat 0.1em 0em;
+  background: url(../images/frameworks.svg) no-repeat 0.1em 0;
   padding-left: 1.5em;
 }
-ul.skills:before {
+
+ul.skills::before {
   content: attr(data-header);
   font-size: 120%;
   font-weight: bold;
   margin-left: -15px;
-  background: url(../images/skills.svg) no-repeat 0.1em 0em;
+  background: url(../images/skills.svg) no-repeat 0.1em 0;
   padding-left: 1.5em;
 }
 
@@ -308,18 +327,6 @@ button.btn-get {
 footer {
   padding: 2em;
   border-top: solid 1px var(--form-text);
-}
-footer ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  margin-top: 1.2em;
-  flex-wrap: wrap;
-  padding-bottom: 1.2em;
-}
-
-footer ul li a {
-  padding: 0 1.2em 0 0;
 }
 
 .border-div {
