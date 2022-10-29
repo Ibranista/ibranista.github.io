@@ -34,8 +34,7 @@ body {
 
 .wrapper {
   box-sizing: border-box;
-  background: var(--background) url("../images/background.svg") no-repeat 100%
-    100%;
+  background: var(--background) url("../images/background.svg") no-repeat 100% 100%;
   color: var(--white);
   height: 100vh;
 }
@@ -183,6 +182,7 @@ div.btn {
 
 div.multi-post {
   width: fit-content;
+  border: none;
 }
 
 div.btn > button {
@@ -192,6 +192,9 @@ div.btn > button {
   color: var(--white);
   background: var(--brand-base);
   padding: 0.5em;
+  width: 100%;
+  border: none;
+  cursor: pointer;
 }
 
 div.btn > button:hover {
@@ -208,7 +211,7 @@ div.btn > button:active {
   background: url(../images/professional-art-background.png) no-repeat;
   background-size: cover;
   color: var(--white);
-  padding: 5em 1em 0;
+  padding: 5em 1em 0.5em;
 }
 
 .work-2 ul.langs > li {
@@ -224,8 +227,7 @@ div.btn > button:active {
 /* about me section */
 
 .about-me {
-  background: var(--background) url(../images/about-background.svg) 100% 100%
-    no-repeat;
+  background: var(--background) url(../images/about-background.svg) 100% 100% no-repeat;
   padding: 7em 2em;
 }
 
