@@ -225,6 +225,7 @@ div.btn > h3 {
 
 .knowledge-desc {
   background: var(--background);
+  padding-bottom: 7.5em;
 }
 
 .knowledge-desc > ul {
@@ -301,4 +302,27 @@ button.btn-get {
   width: 50%;
   text-align: center;
   border: none;
+}
+
+/* footer section */
+footer {
+  padding: 2em;
+  border-top: solid 1px var(--form-text);
+}
+footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-top: 1.2em;
+  flex-wrap: wrap;
+  padding-bottom: 1.2em;
+}
+
+footer ul li a {
+  padding: 0 1.2em 0 0;
+}
+
+.border-div {
+  display: flex;
+  justify-content: center;
 }
