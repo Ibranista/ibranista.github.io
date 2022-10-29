@@ -198,9 +198,9 @@ div.btn > button {
 }
 
 div.btn > button:hover {
-  color: var(--brand-base);
-  background: var(--form-text);
-  border: 1px solid var(--brand-base);
+  background-color: #ffff;
+  color: #ff6b00;
+  border: 1px solid #ff6b00;
 }
 
 div.btn > button:active {
