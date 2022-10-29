@@ -34,7 +34,8 @@ body {
 
 .wrapper {
   box-sizing: border-box;
-  background: var(--background) url("../images/background.svg") no-repeat 100% 100%;
+  background: var(--background) url("../images/background.svg") no-repeat 100%
+    100%;
   color: var(--white);
   height: 100vh;
 }
@@ -184,13 +185,23 @@ div.multi-post {
   width: fit-content;
 }
 
-div.btn > h3 {
+div.btn > button {
   font-family: var(--work-desc);
   font-size: 1.06em;
   font-weight: 700;
   color: var(--white);
   background: var(--brand-base);
   padding: 0.5em;
+}
+
+div.btn > button:hover {
+  color: var(--brand-base);
+  background: var(--form-text);
+  border: 1px solid var(--brand-base);
+}
+
+div.btn > button:active {
+  background: dark rgb(228, 104, 9);
 }
 
 .work-2 .desc-wrapper {
@@ -213,7 +224,8 @@ div.btn > h3 {
 /* about me section */
 
 .about-me {
-  background: var(--background) url(../images/about-background.svg) 100% 100% no-repeat;
+  background: var(--background) url(../images/about-background.svg) 100% 100%
+    no-repeat;
   padding: 7em 2em;
 }
 
