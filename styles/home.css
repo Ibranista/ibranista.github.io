@@ -117,13 +117,14 @@ footer ul li a {
 /* recent works section */
 .content-wrapper {
   display: grid;
-  grid-template-columns: minmax(auto, 90%);
+  grid-template-columns: minmax(auto, 100%);
   justify-content: center;
   background: var(--background);
 }
 
 .recent-works {
   background: var(--white);
+  padding: 2em;
 }
 
 .recent-works > h1 {
@@ -141,7 +142,7 @@ figure .multi-post {
 }
 
 .recent-works > section {
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
   align-items: center;
   margin-bottom: 1.5em;
@@ -179,6 +180,10 @@ div.btn {
   align-self: flex-start;
 }
 
+div.multi-post {
+  width: 30%;
+}
+
 div.btn > h3 {
   font-family: var(--work-desc);
   font-size: 1.06em;
@@ -189,7 +194,8 @@ div.btn > h3 {
 }
 
 .work-2 .desc-wrapper {
-  background: url(../images/professional-art-background.png);
+  background: url(../images/professional-art-background.png) no-repeat;
+  background-size: cover;
   color: var(--white);
   padding: 5em 1em 0;
 }
@@ -208,7 +214,15 @@ div.btn > h3 {
 
 .about-me {
   background: var(--background) url(../images/about-background.svg) 100% 100% no-repeat;
-  padding: 7em 1em;
+  padding: 7em 2em;
+}
+
+.about-border {
+  background: var(--white);
+  height: 0.1em;
+  width: 80%;
+  justify-self: center;
+  margin-bottom: 6em;
 }
 
 .about-me > h1.about-title {
