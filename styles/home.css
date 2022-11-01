@@ -197,13 +197,28 @@ div.btn > button {
   cursor: pointer;
 }
 
-div.btn > button:hover {
+button.btn-get {
+  background: var(--brand-base);
+  color: var(--white);
+  font-family: var(--work-desc);
+  font-weight: 700;
+  font-size: 1.06em;
+  padding: 0.5em;
+  width: fit-content;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+}
+
+div.btn > button:hover,
+button.btn-get:hover {
   background-color: #ffff;
   color: #ff6b00;
   border: 1px solid #ff6b00;
 }
 
-div.btn > button:active {
+div.btn > button:active,
+button.btn-get:active {
   background: dark rgb(228, 104, 9);
 }
 
@@ -312,6 +327,7 @@ ul.skills::before {
   background: url(../images/skills.svg) no-repeat 0.1em 0;
   padding-left: 1.5em;
 }
+
 /* get in touch section */
 
 .get-in-touch {
@@ -328,9 +344,9 @@ ul.skills::before {
 form.get-in-touch-form input {
   border: none;
   border-bottom: 1px solid var(--form-text);
-  width: 100%;
   color: var(--form-text);
-  padding: 0.5em;
+  padding: 0.6em;
+  width: 90%;
 }
 
 form > textarea {
@@ -338,19 +354,9 @@ form > textarea {
   border: none;
   padding: 1em;
   margin: 1em 0;
+  width: 90%;
 }
 
-button.btn-get {
-  background: var(--brand-base);
-  color: var(--white);
-  font-family: var(--work-desc);
-  font-weight: 700;
-  font-size: 1.06em;
-  padding: 0.5em;
-  width: 50%;
-  text-align: center;
-  border: none;
-}
 /* footer section */
 footer {
   padding: 2em;
@@ -361,3 +367,4 @@ footer {
   display: flex;
   justify-content: center;
 }
+
