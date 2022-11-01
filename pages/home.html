@@ -4,13 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
     <link rel="stylesheet" href="../styles/home.css" />
     <title>Document</title>
   </head>
@@ -301,15 +294,26 @@
         I'm always interested in hearing about new projects, so if you'd like to
         chat please get in touch.
       </h2>
-      <form action="https://formspree.io/f/xlevordy" method="post" class="get-in-touch-form">
-        <input type="text" placeholder="Full name" maxlength="30" required/>
-        <input type="text" placeholder="Email address" required />
+      <form
+        action="https://formspree.io/f/xlevordy"
+        method="post"
+        class="get-in-touch-form"
+      >
+        <input
+          type="text"
+          placeholder="Full name"
+          maxlength="30"
+          name="full name"
+          required
+        />
+        <input type="text" placeholder="Email address" name="email" required />
         <textarea
           placeholder="Enter text here"
           id=""
           cols="40"
           rows="6"
           maxlength="500"
+          name="comment"
           required
         ></textarea>
         <button class="btn-get">Get in touch</button>
