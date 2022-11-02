@@ -102,18 +102,39 @@ svg {
 
 .recent-works > h1 {
   text-align: left;
-  padding: 3em 0 0.7em;
-  margin-bottom: 1.6em;
   border-bottom: none;
   position: relative;
 }
 
 .recent-works > h1:after {
   content: "";
-  width: 60%;
+  width: 65%;
   border-bottom: solid 1px var(--background);
   position: absolute;
   left: 8.4em;
   top: 73%;
   z-index: 1;
+}
+figure {
+  padding: 0.4em;
+}
+.work-1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2em;
+  background: skyblue;
+}
+article.post-wrapper {
+  height: 100%;
+  padding-right: 12em;
+}
+article > p.story-detail {
+  padding-top: 0.6em;
+  line-height: 28px;
+}
+article.post-wrapper > h2.work-description {
+  padding-top: 0;
+}
+ul.langs {
+  margin: 0.5em 0;
 }
