@@ -131,9 +131,9 @@ ul.langs {
 
 article.project-wrapper {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 439.4px);
+  grid-template-columns: repeat(auto-fill, 415px);
   gap: 2em;
-  justify-content: center;
+  padding-right: 5em;
 }
 
 .work-2 article.desc-wrapper {
