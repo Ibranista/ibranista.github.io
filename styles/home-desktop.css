@@ -22,6 +22,7 @@
   --work-desc: "Inter";
   --languages: "Meera Inimai";
 }
+
 /* navbar section */
 .header {
   background: var(--navbackground);
@@ -35,12 +36,12 @@
 /* main section */
 .wrapper {
   box-sizing: border-box;
-  background: var(--background) url("../images/desktop-header.svg") no-repeat
-    100% 100%;
+  background: var(--background) url("../images/desktop-header.svg") no-repeat 100% 100%;
   color: var(--white);
   height: 100vh;
   overflow: hidden;
 }
+
 section.container {
   box-sizing: border-box;
   display: flex;
@@ -50,9 +51,11 @@ section.container {
   width: 50em;
   height: 100%;
 }
+
 .welcome {
   padding: 0 6em 0 2em;
 }
+
 .welcome .intro {
   font-weight: 400;
   font-size: 4.4em;
@@ -64,19 +67,23 @@ section.container {
   font-size: 0.85em;
   line-height: 32px;
 }
+
 /* social links */
 section.social-links > ul {
   display: flex;
   flex-direction: column;
   padding: 0;
 }
+
 .contact-me {
   align-self: center;
   height: 80%;
 }
+
 .social-links ul li {
   padding: 0.5em 0 0 0;
 }
+
 .contact-me svg {
   width: 1.4em;
 }
@@ -88,17 +95,20 @@ section.social-links > ul {
   justify-content: center;
   background: var(--background);
 }
+
 .recent-works {
   padding-left: 6em;
   padding-bottom: 7em;
 }
+
 .recent-works > h1 {
   text-align: left;
   border-bottom: none;
   position: relative;
   overflow: hidden;
 }
-.recent-works > h1:after {
+
+.recent-works > h1::after {
   content: "";
   width: 70%;
   border-bottom: solid 1px var(--background);
@@ -107,25 +117,31 @@ section.social-links > ul {
   top: 75%;
   z-index: 1;
 }
+
 figure {
   padding: 0.4em;
 }
+
 .work-1 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2em;
 }
+
 article.post-wrapper {
   height: 100%;
   padding-right: 12em;
 }
+
 article > p.story-detail {
   padding-top: 0.6em;
   line-height: 28px;
 }
+
 article.post-wrapper > h2.work-description {
   padding-top: 0;
 }
+
 ul.langs {
   margin: 0.5em 0;
 }
@@ -156,30 +172,35 @@ article.project-wrapper {
   color: var(--white);
   padding: 2.5em 1em 0.5em;
 }
+
 .work-2 .card-2 {
   background: url(../images/card-2.png) no-repeat;
   background-size: cover;
   color: var(--white);
   padding: 5em 1em 0.5em;
 }
+
 .work-2 .card-3 {
   background: url(../images/card-3.png) no-repeat;
   background-size: cover;
   color: var(--white);
   padding: 5em 1em 0.5em;
 }
+
 .work-2 .card-4 {
   background: url(../images/card-4.png) no-repeat;
   background-size: cover;
   color: var(--white);
   padding: 5em 1em 0.5em;
 }
+
 .work-2 .card-5 {
   background: url(../images/card-2.png) no-repeat;
   background-size: cover;
   color: var(--white);
   padding: 5em 1em 0.5em;
 }
+
 .work-2 .card-6 {
   background: url(../images/card-3.png) no-repeat;
   background-size: cover;
@@ -215,6 +236,7 @@ section.knowledge-desc {
 form.get-in-touch-form {
   display: grid;
 }
+
 form.get-in-touch-form input {
   border: none;
   border-bottom: 1px solid var(--form-text);
@@ -222,6 +244,7 @@ form.get-in-touch-form input {
   padding: 1em;
   width: 90%;
 }
+
 div.border-div {
   display: none;
 }
