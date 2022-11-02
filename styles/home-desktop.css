@@ -199,7 +199,15 @@ article.project-wrapper {
 /* about-me section */
 
 section.about-me {
-  background: darkblue url(../images/desktop-about-background.svg) 100% 100% no-repeat;
+  background: darkblue url(../images/desktop-about-background.svg) 100% 100%
+    no-repeat;
   display: grid;
   grid-template-columns: repeat(1, 50%);
+}
+
+/* knowledge section */
+section.knowledge-desc {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: start;
 }
