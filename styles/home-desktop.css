@@ -1,0 +1,54 @@
+@media screen and (min-device-width: 768px) {
+  /* main section */
+  .wrapper {
+    box-sizing: border-box;
+    background: var(--background) url("../images/desktop-header.svg") no-repeat
+      100% 100%;
+    color: var(--white);
+    height: 100vh;
+    overflow: hidden;
+  }
+  section.container {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    background-color: skyblue;
+    padding: 10em 0 10em 2em;
+    width: 50%;
+    height: 100%;
+  }
+  .welcome {
+    background: darkblue;
+    padding: 0 6em 0 2em;
+  }
+  .welcome .intro {
+    font-weight: 400;
+    font-size: 4.4em;
+    line-height: 82px;
+  }
+
+  .welcome .profession {
+    font-family: var(--general-family);
+    font-weight: 700;
+    font-size: 2em;
+    margin: 0.8em 0;
+  }
+
+  .description {
+    font-family: var(--body-family);
+    font-weight: 500;
+    font-size: 0.85em;
+    line-height: 32px;
+  }
+  /* social links */
+  section.social-links > ul {
+    display: flex;
+    flex-direction: column;
+    background: darkblue;
+    padding: 0;
+  }
+  .contact-me {
+    align-self: center;
+  }
+}
