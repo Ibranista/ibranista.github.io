@@ -135,6 +135,7 @@ article.project-wrapper {
   grid-template-columns: repeat(auto-fill, 415px);
   gap: 2em;
   padding-right: 5em;
+  justify-content: center;
 }
 
 .work-2 article.desc-wrapper {
