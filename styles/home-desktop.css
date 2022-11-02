@@ -96,7 +96,15 @@ section.social-links > ul {
   border-bottom: none;
   position: relative;
 }
-
+.recent-works > h1:after {
+  content: "";
+  width: 65%;
+  border-bottom: solid 1px var(--background);
+  position: absolute;
+  left: 8.5em;
+  top: 75%;
+  z-index: 1;
+}
 figure {
   padding: 0.4em;
 }
