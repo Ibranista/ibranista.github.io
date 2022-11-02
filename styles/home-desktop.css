@@ -138,3 +138,60 @@ article.post-wrapper > h2.work-description {
 ul.langs {
   margin: 0.5em 0;
 }
+
+article.project-wrapper {
+  background-color: skyblue;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 439.4px);
+  gap: 2em;
+  justify-content: center;
+}
+
+.work-2 article.desc-wrapper {
+  height: 27.18em;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.work-2:not(:first-child) div.btn > button.btn-project {
+  display: none;
+}
+
+/* cards section */
+.work-2 .card-1 {
+  background: url(../images/card-1.png) no-repeat;
+  background-size: cover;
+  color: var(--white);
+  padding: 2.5em 1em 0.5em;
+}
+.work-2 .card-2 {
+  background: url(../images/card-2.png) no-repeat;
+  background-size: cover;
+  color: var(--white);
+  padding: 5em 1em 0.5em;
+}
+.work-2 .card-3 {
+  background: url(../images/card-3.png) no-repeat;
+  background-size: cover;
+  color: var(--white);
+  padding: 5em 1em 0.5em;
+}
+.work-2 .card-4 {
+  background: url(../images/card-4.png) no-repeat;
+  background-size: cover;
+  color: var(--white);
+  padding: 5em 1em 0.5em;
+}
+.work-2 .card-5 {
+  background: url(../images/card-2.png) no-repeat;
+  background-size: cover;
+  color: var(--white);
+  padding: 5em 1em 0.5em;
+}
+.work-2 .card-6 {
+  background: url(../images/card-3.png) no-repeat;
+  background-size: cover;
+  color: var(--white);
+  padding: 5em 1em 0.5em;
+}
