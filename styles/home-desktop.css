@@ -29,7 +29,7 @@
   font-size: 0.8em;
   display: flex;
   justify-content: space-between;
-  padding: 1em 6em;
+  padding: 1em 7.5em;
 }
 
 /* main section */
@@ -46,13 +46,11 @@ section.container {
   display: flex;
   flex-direction: row-reverse;
   justify-content: flex-start;
-  background-color: skyblue;
   padding: 10em 0 10em 2em;
   width: 50em;
   height: 100%;
 }
 .welcome {
-  background: darkblue;
   padding: 0 6em 0 2em;
 }
 .welcome .intro {
@@ -61,15 +59,7 @@ section.container {
   line-height: 82px;
 }
 
-.welcome .profession {
-  font-family: var(--general-family);
-  font-weight: 700;
-  font-size: 2em;
-  margin: 0.8em 0;
-}
-
 .description {
-  font-family: var(--body-family);
   font-weight: 500;
   font-size: 0.85em;
   line-height: 32px;
@@ -78,17 +68,17 @@ section.container {
 section.social-links > ul {
   display: flex;
   flex-direction: column;
-  background: darkblue;
   padding: 0;
 }
 .contact-me {
   align-self: center;
+  height: 80%;
 }
 .social-links ul li {
   padding: 0.5em 0 0 0;
 }
-svg {
-  width: 1.6em;
+.contact-me svg {
+  width: 1.4em;
 }
 
 /* recent works section */
@@ -97,24 +87,16 @@ svg {
   grid-template-columns: minmax(auto, 100%);
   justify-content: center;
   background: var(--background);
-  padding: 0 0 0 4.5em;
 }
-
+.recent-works {
+  padding-left: 6em;
+}
 .recent-works > h1 {
   text-align: left;
   border-bottom: none;
   position: relative;
 }
 
-.recent-works > h1:after {
-  content: "";
-  width: 65%;
-  border-bottom: solid 1px var(--background);
-  position: absolute;
-  left: 8.4em;
-  top: 73%;
-  z-index: 1;
-}
 figure {
   padding: 0.4em;
 }
@@ -122,7 +104,6 @@ figure {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2em;
-  background: skyblue;
 }
 article.post-wrapper {
   height: 100%;
@@ -140,7 +121,6 @@ ul.langs {
 }
 
 article.project-wrapper {
-  background-color: skyblue;
   display: grid;
   grid-template-columns: repeat(auto-fill, 439.4px);
   gap: 2em;
@@ -199,10 +179,10 @@ article.project-wrapper {
 /* about-me section */
 
 section.about-me {
-  background: darkblue url(../images/desktop-about-background.svg) 100% 100%
-    no-repeat;
+  background: url(../images/desktop-about-background.svg) 100% 100% no-repeat;
   display: grid;
   grid-template-columns: repeat(1, 50%);
+  padding-left: 6em;
 }
 
 /* knowledge section */
@@ -210,4 +190,31 @@ section.knowledge-desc {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-items: start;
+  padding-left: 6em;
+}
+
+/* get-intouch-section */
+
+.get-in-touch {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2em;
+}
+
+form.get-in-touch-form {
+  display: grid;
+}
+form.get-in-touch-form input {
+  border: none;
+  border-bottom: 1px solid var(--form-text);
+  color: var(--form-text);
+  padding: 1em;
+  width: 90%;
+}
+div.border-div {
+  display: none;
+}
+
+footer {
+  padding: 0.5em;
 }
