@@ -249,9 +249,10 @@ button.btn-get:active {
 .about-border {
   background: var(--white);
   height: 0.1em;
-  width: 80%;
+  width: 90%;
   justify-self: center;
   margin-bottom: 6em;
+  margin-right: 4em;
 }
 
 .about-me > h1.about-title {
@@ -277,7 +278,7 @@ button.btn-get:active {
   font-weight: 700;
   font-size: 1.06em;
   padding: 0.5em;
-  width: 50%;
+  width: fit-content;
   text-align: center;
 }
 
