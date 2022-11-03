@@ -34,9 +34,11 @@ body {
 
 .wrapper {
   box-sizing: border-box;
-  background: var(--background) url("../images/background.svg") no-repeat 100% 100%;
+  background: var(--background) url("../images/background.svg") no-repeat 100%
+    100%;
   color: var(--white);
   height: 100vh;
+  min-width: 285px;
 }
 
 /* navbar section */
@@ -65,7 +67,7 @@ body {
 /* main section */
 .container {
   position: relative;
-  padding: 10em 1.5em 0;
+  padding: 5em 1.5em 0;
 }
 
 .welcome .intro {
@@ -106,7 +108,9 @@ footer ul li a {
 .social-links ul {
   list-style: none;
   display: flex;
+  justify-content: center;
   margin-top: 1.2em;
+  padding: 0 0 0 1em;
 }
 
 .social-links ul li a {
@@ -119,6 +123,7 @@ footer ul li a {
   grid-template-columns: minmax(auto, 100%);
   justify-content: center;
   background: var(--background);
+  min-width: 285px;
 }
 
 .recent-works {
@@ -245,7 +250,8 @@ button.btn-get:active {
 /* about me section */
 
 .about-me {
-  background: var(--background) url(../images/about-background.svg) 100% 100% no-repeat;
+  background: var(--background) url(../images/about-background.svg) 100% 100%
+    no-repeat;
   padding: 7em 2em;
 }
 
@@ -341,6 +347,7 @@ ul.skills::before {
   font-size: 1.3em;
   text-align: center;
   line-height: 44px;
+  min-width: 285px;
   width: 90%;
   margin: 5em auto;
 }
@@ -363,7 +370,8 @@ form > textarea {
 
 /* footer section */
 footer {
-  padding: 2em;
+  min-width: 285px;
+  margin: auto;
   border-top: solid 1px var(--form-text);
 }
 
