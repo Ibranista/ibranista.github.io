@@ -136,7 +136,7 @@ article.post-wrapper {
   width: 90%;
 }
 
-article > p.story-detail {
+p.story-detail {
   padding-top: 0.6em;
   line-height: 28px;
 }
@@ -155,7 +155,7 @@ article.project-wrapper {
   gap: 2em;
 }
 
-.work-2 article.desc-wrapper {
+.work-2 div.desc-wrapper {
   height: 27.18em;
   display: flex;
   flex-direction: column;
@@ -167,11 +167,20 @@ article.project-wrapper {
 }
 
 /* cards section */
-.work-2 .card-1 {
-  background: url(../images/card-1.png) no-repeat;
+
+.work-2:first-child {
+  background: skyblue url(../images/card-1.png) no-repeat;
   background-size: cover;
   color: var(--white);
-  padding: 2.5em 1em -1em;
+  padding-bottom: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.work-2:first-child .btn{
+  display:block;
 }
 
 .work-2 .card-2 {
