@@ -231,9 +231,6 @@ section.knowledge-desc {
 /* get-intouch-section */
 
 .get-in-touch {
-  /* display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2em; */
   display: flex;
 }
 
