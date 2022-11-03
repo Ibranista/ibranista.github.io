@@ -107,7 +107,6 @@ footer ul li a {
   list-style: none;
   display: flex;
   margin-top: 1.2em;
-  flex-wrap: wrap;
 }
 
 .social-links ul li a {
@@ -220,6 +219,10 @@ button.btn-get:hover {
 div.btn > button:active,
 button.btn-get:active {
   background: dark rgb(228, 104, 9);
+}
+
+.work-2:first-child .btn{
+  display:none;
 }
 
 .work-2 .desc-wrapper {
