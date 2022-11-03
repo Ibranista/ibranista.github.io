@@ -36,7 +36,8 @@
 /* main section */
 .wrapper {
   box-sizing: border-box;
-  background: var(--background) url("../images/desktop-header.svg") no-repeat 100% 100%;
+  background: var(--background) url("../images/desktop-header.svg") no-repeat
+    100% 100%;
   color: var(--white);
   height: 100vh;
   overflow: hidden;
@@ -97,8 +98,8 @@ section.social-links > ul {
 }
 
 .recent-works {
-  padding-left: 6em;
   padding-bottom: 7em;
+  padding: 0 5em 7em 5em;
 }
 
 .recent-works > h1 {
@@ -119,18 +120,20 @@ section.social-links > ul {
 }
 
 figure {
-  padding: 0.4em;
+  width: 100%;
 }
 
 .work-1 {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1.3fr 1fr;
   gap: 2em;
+  width: 98.5%;
+  overflow: hidden;
 }
 
 article.post-wrapper {
   height: 100%;
-  padding-right: 12em;
+  width: 90%;
 }
 
 article > p.story-detail {
@@ -148,10 +151,8 @@ ul.langs {
 
 article.project-wrapper {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 415px);
+  grid-template-columns: repeat(3, 31.3%);
   gap: 2em;
-  padding-right: 5em;
-  justify-content: center;
 }
 
 .work-2 article.desc-wrapper {
@@ -170,42 +171,42 @@ article.project-wrapper {
   background: url(../images/card-1.png) no-repeat;
   background-size: cover;
   color: var(--white);
-  padding: 2.5em 1em 0.5em;
+  padding: 2.5em 1em -1em;
 }
 
 .work-2 .card-2 {
   background: url(../images/card-2.png) no-repeat;
   background-size: cover;
   color: var(--white);
-  padding: 5em 1em 0.5em;
+  /* padding: 5em 1em 0.5em; */
 }
 
 .work-2 .card-3 {
   background: url(../images/card-3.png) no-repeat;
   background-size: cover;
   color: var(--white);
-  padding: 5em 1em 0.5em;
+  /* padding: 5em 1em 0.5em; */
 }
 
 .work-2 .card-4 {
   background: url(../images/card-4.png) no-repeat;
   background-size: cover;
   color: var(--white);
-  padding: 5em 1em 0.5em;
+  /* padding: 5em 1em 0.5em; */
 }
 
 .work-2 .card-5 {
   background: url(../images/card-2.png) no-repeat;
   background-size: cover;
   color: var(--white);
-  padding: 5em 1em 0.5em;
+  /* padding: 5em 1em 0.5em; */
 }
 
 .work-2 .card-6 {
   background: url(../images/card-3.png) no-repeat;
   background-size: cover;
   color: var(--white);
-  padding: 5em 1em 0.5em;
+  /* padding: 5em 1em 0.5em; */
 }
 
 /* about-me section */
