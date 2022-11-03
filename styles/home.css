@@ -26,6 +26,7 @@
 /* general styles */
 body {
   font-size: 100%;
+  min-width: 317px;
 }
 
 * {
@@ -37,8 +38,9 @@ body {
   background: var(--background) url("../images/background.svg") no-repeat 100%
     100%;
   color: var(--white);
+  min-width: 286px;
   height: 100vh;
-  min-width: 285px;
+  min-height: 692px;
 }
 
 /* navbar section */
@@ -172,6 +174,7 @@ p.story-detail {
   font-size: 0.9em;
   font-weight: 500;
   padding: 0.7em 0;
+  overflow: hidden;
 }
 
 .recent-works ul.langs > li {
