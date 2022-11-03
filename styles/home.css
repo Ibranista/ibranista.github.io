@@ -221,8 +221,8 @@ button.btn-get:active {
   background: dark rgb(228, 104, 9);
 }
 
-.work-2:first-child .btn{
-  display:none;
+.work-2:first-child .btn {
+  display: none;
 }
 
 .work-2 .desc-wrapper {

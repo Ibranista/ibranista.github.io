@@ -36,8 +36,7 @@
 /* main section */
 .wrapper {
   box-sizing: border-box;
-  background: var(--background) url("../images/desktop-header.svg") no-repeat
-    100% 100%;
+  background: var(--background) url("../images/desktop-header.svg") no-repeat 100% 100%;
   color: var(--white);
   height: 100vh;
   overflow: hidden;
@@ -98,7 +97,6 @@ section.social-links > ul {
 }
 
 .recent-works {
-  padding-bottom: 7em;
   padding: 0 5em 7em 5em;
 }
 
@@ -179,43 +177,38 @@ article.project-wrapper {
   justify-content: flex-end;
 }
 
-.work-2:first-child .btn{
-  display:block;
+.work-2:first-child .btn {
+  display: block;
 }
 
 .work-2 .card-2 {
   background: url(../images/card-2.png) no-repeat;
   background-size: cover;
   color: var(--white);
-  /* padding: 5em 1em 0.5em; */
 }
 
 .work-2 .card-3 {
   background: url(../images/card-3.png) no-repeat;
   background-size: cover;
   color: var(--white);
-  /* padding: 5em 1em 0.5em; */
 }
 
 .work-2 .card-4 {
   background: url(../images/card-4.png) no-repeat;
   background-size: cover;
   color: var(--white);
-  /* padding: 5em 1em 0.5em; */
 }
 
 .work-2 .card-5 {
   background: url(../images/card-2.png) no-repeat;
   background-size: cover;
   color: var(--white);
-  /* padding: 5em 1em 0.5em; */
 }
 
 .work-2 .card-6 {
   background: url(../images/card-3.png) no-repeat;
   background-size: cover;
   color: var(--white);
-  /* padding: 5em 1em 0.5em; */
 }
 
 /* about-me section */
