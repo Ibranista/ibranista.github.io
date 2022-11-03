@@ -231,21 +231,36 @@ section.knowledge-desc {
 /* get-intouch-section */
 
 .get-in-touch {
-  display: grid;
+  /* display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 2em;
+  gap: 2em; */
+  display: flex;
+}
+
+h2.email-me {
+  text-align: left;
+  width: 40%;
+  padding: 0 1em 0 0;
+  margin-left: 96px;
 }
 
 form.get-in-touch-form {
   display: grid;
+  overflow: hidden;
 }
 
 form.get-in-touch-form input {
   border: none;
   border-bottom: 1px solid var(--form-text);
   color: var(--form-text);
-  padding: 1em;
-  width: 90%;
+  width: 100%;
+  padding: 1em 0;
+}
+
+form > textarea {
+  padding: 1em 0 0 0.5em;
+  width: 100%;
+  margin: 1.5em 0;
 }
 
 div.border-div {
