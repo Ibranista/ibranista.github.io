@@ -1,0 +1,279 @@
+/* importing google font */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,700;1,300&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,400;0,700;1,300&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Meera+Inimai&display=swap");
+
+/* colors & font names */
+:root {
+  --brand-base: #ff6b00;
+  --social-links: #dbd8d7;
+  --white: #fff;
+  --transparent-white: rgba(255, 255, 255, 0.197);
+  --background: #1c1a19;
+  --navbackground: #3c3a39;
+  --langs: #8993a4;
+  --form-text: #979493;
+  --text-area: #fbf8f7;
+  --primary-family: "Crete Round";
+  --body-family: "Poppins";
+  --general-family: "Roboto";
+  --work-desc: "Inter";
+  --languages: "Meera Inimai";
+}
+
+/* navbar section */
+.header {
+  background: var(--navbackground);
+  font-family: var(--general-family);
+  font-size: 0.8em;
+  display: flex;
+  justify-content: space-between;
+  padding: 1em 7.5em;
+}
+
+/* main section */
+.wrapper {
+  box-sizing: border-box;
+  background: var(--background) url("../images/desktop-header.svg") no-repeat 100% 100%;
+  color: var(--white);
+  height: 100vh;
+  overflow: hidden;
+  min-width: 1145px;
+}
+
+section.container {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+  padding: 10em 0 10em 2em;
+  width: 50em;
+  height: 100%;
+}
+
+.welcome {
+  padding: 0 6em 0 2em;
+}
+
+.welcome .intro {
+  font-weight: 400;
+  font-size: 4.4em;
+  line-height: 82px;
+}
+
+.description {
+  font-weight: 500;
+  font-size: 0.85em;
+  line-height: 32px;
+}
+
+/* social links */
+section.social-links > ul {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+.contact-me {
+  align-self: center;
+  height: 80%;
+}
+
+.social-links ul li {
+  padding: 0.5em 0 0 0;
+}
+
+.contact-me svg {
+  width: 1.4em;
+}
+
+/* recent works section */
+.content-wrapper {
+  display: grid;
+  grid-template-columns: minmax(auto, 100%);
+  justify-content: center;
+  background: var(--background);
+  min-width: 1145px;
+}
+
+.recent-works {
+  padding: 0 5em 7em 5em;
+}
+
+.recent-works > h1 {
+  text-align: left;
+  border-bottom: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.recent-works > h1::after {
+  content: "";
+  width: 70%;
+  border-bottom: solid 1px var(--background);
+  position: absolute;
+  left: 8.5em;
+  top: 75%;
+  z-index: 1;
+}
+
+figure {
+  width: 100%;
+}
+
+figure.story-image {
+  min-width: 367px;
+}
+
+.work-1 {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 2em;
+  min-width: 100%;
+}
+
+article.post-wrapper {
+  height: 100%;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+p.story-detail {
+  padding-top: 0.6em;
+  line-height: 28px;
+}
+
+article.post-wrapper > h2.work-description {
+  padding-top: 0;
+}
+
+ul.langs {
+  margin: 0.5em 0;
+}
+
+article.project-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 31.3%);
+  gap: 2em;
+}
+
+.work-2 div.desc-wrapper {
+  height: 27.18em;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.work-2:not(:first-child) div.btn > button.btn-project {
+  display: none;
+}
+
+/* cards section */
+
+.work-2:first-child {
+  background: skyblue url(../images/card-1.png) no-repeat;
+  background-size: cover;
+  color: var(--white);
+  padding-bottom: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.work-2:first-child .btn {
+  display: block;
+}
+
+.work-2 .card-2 {
+  background: url(../images/card-2.png) no-repeat;
+  background-size: cover;
+  color: var(--white);
+}
+
+.work-2 .card-3 {
+  background: url(../images/card-3.png) no-repeat;
+  background-size: cover;
+  color: var(--white);
+}
+
+.work-2 .card-4 {
+  background: url(../images/card-4.png) no-repeat;
+  background-size: cover;
+  color: var(--white);
+}
+
+.work-2 .card-5 {
+  background: url(../images/card-2.png) no-repeat;
+  background-size: cover;
+  color: var(--white);
+}
+
+.work-2 .card-6 {
+  background: url(../images/card-3.png) no-repeat;
+  background-size: cover;
+  color: var(--white);
+}
+
+/* about-me section */
+
+section.about-me {
+  background: url(../images/desktop-about-background.svg) 100% 100% no-repeat;
+  display: grid;
+  grid-template-columns: repeat(1, 50%);
+  padding-left: 6em;
+}
+
+/* knowledge section */
+section.knowledge-desc {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: start;
+  padding-left: 6em;
+}
+
+/* get-intouch-section */
+
+.get-in-touch {
+  display: flex;
+  min-width: 1129px;
+}
+
+h2.email-me {
+  text-align: left;
+  width: 40%;
+  padding: 0 1em 0 0;
+  margin-left: 96px;
+}
+
+form.get-in-touch-form {
+  display: grid;
+  overflow: hidden;
+}
+
+form.get-in-touch-form input {
+  border: none;
+  border-bottom: 1px solid var(--form-text);
+  color: var(--form-text);
+  width: 100%;
+  padding: 1em 0;
+}
+
+form > textarea {
+  padding: 1em 0 0 0.5em;
+  width: 100%;
+  margin: 1.5em 0;
+}
+
+div.border-div {
+  display: none;
+}
+
+footer {
+  padding: 0.5em;
+  min-width: 1129px;
+}

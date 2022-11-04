@@ -26,6 +26,7 @@
 /* general styles */
 body {
   font-size: 100%;
+  min-width: 317px;
 }
 
 * {
@@ -36,7 +37,9 @@ body {
   box-sizing: border-box;
   background: var(--background) url("../images/background.svg") no-repeat 100% 100%;
   color: var(--white);
+  min-width: 286px;
   height: 100vh;
+  min-height: 695px;
 }
 
 /* navbar section */
@@ -65,7 +68,7 @@ body {
 /* main section */
 .container {
   position: relative;
-  padding: 10em 1.5em 0;
+  padding: 5em 1.5em 0;
 }
 
 .welcome .intro {
@@ -106,8 +109,9 @@ footer ul li a {
 .social-links ul {
   list-style: none;
   display: flex;
+  justify-content: center;
   margin-top: 1.2em;
-  flex-wrap: wrap;
+  padding: 0 0 0 1em;
 }
 
 .social-links ul li a {
@@ -120,6 +124,7 @@ footer ul li a {
   grid-template-columns: minmax(auto, 100%);
   justify-content: center;
   background: var(--background);
+  min-width: 285px;
 }
 
 .recent-works {
@@ -168,6 +173,7 @@ p.story-detail {
   font-size: 0.9em;
   font-weight: 500;
   padding: 0.7em 0;
+  overflow: hidden;
 }
 
 .recent-works ul.langs > li {
@@ -222,6 +228,10 @@ button.btn-get:active {
   background: dark rgb(228, 104, 9);
 }
 
+.work-2:first-child .btn {
+  display: none;
+}
+
 .work-2 .desc-wrapper {
   background: url(../images/professional-art-background.png) no-repeat;
   background-size: cover;
@@ -252,6 +262,7 @@ button.btn-get:active {
   width: 80%;
   justify-self: center;
   margin-bottom: 6em;
+  margin-top: 6em;
 }
 
 .about-me > h1.about-title {
@@ -277,7 +288,7 @@ button.btn-get:active {
   font-weight: 700;
   font-size: 1.06em;
   padding: 0.5em;
-  width: 50%;
+  width: fit-content;
   text-align: center;
 }
 
@@ -337,6 +348,7 @@ ul.skills::before {
   font-size: 1.3em;
   text-align: center;
   line-height: 44px;
+  min-width: 285px;
   width: 90%;
   margin: 5em auto;
 }
@@ -359,7 +371,8 @@ form > textarea {
 
 /* footer section */
 footer {
-  padding: 2em;
+  min-width: 285px;
+  margin: auto;
   border-top: solid 1px var(--form-text);
 }
 
