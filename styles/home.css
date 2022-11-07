@@ -52,6 +52,7 @@ body {
   justify-content: space-between;
   padding: 1em 2.2em;
 }
+
 header:hover {
   background: var(--brand-base);
   color: var(--white);
