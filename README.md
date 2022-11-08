@@ -14,7 +14,7 @@
 
 **This is a personal portfolio that explains about me (Ibrahim) and my previous works. **
 
-To get a local copy up and running follow these simple example steps.
+To visit the portfolio page please visit https://ibranista.github.io/
 
 ### Prerequisites
 
