@@ -35,12 +35,26 @@ body {
 
 .wrapper {
   box-sizing: border-box;
-  background: var(--background) url("../images/background.svg") no-repeat 100% 100%;
+  background: var(--background) url("../images/background.svg") no-repeat 100%
+    100%;
   color: var(--white);
   min-width: 286px;
   height: 100vh;
   min-height: 695px;
   transition: background 1s ease-out;
+}
+
+/* hum-menu */
+
+.hum-menu li.menu-1 {
+  transform: rotate(45deg)  translateY(3px)  !important;
+ 
+}
+.hum-menu li.menu-2 {
+  display: none;
+}
+.hum-menu li.menu-3 {
+  transform: rotate(-45deg) translateY(-3px) !important;
 }
 
 /* navbar section */
@@ -258,7 +272,8 @@ button.btn-get:active {
 /* about me section */
 
 .about-me {
-  background: var(--background) url(../images/about-background.svg) 100% 100% no-repeat;
+  background: var(--background) url(../images/about-background.svg) 100% 100%
+    no-repeat;
   padding: 7em 2em;
 }
 
