@@ -16,6 +16,7 @@
   --langs: #8993a4;
   --form-text: #979493;
   --text-area: #fbf8f7;
+  --link-separator: #6f6c6b;
   --primary-family: "Crete Round";
   --body-family: "Poppins";
   --general-family: "Roboto";
@@ -46,15 +47,45 @@ body {
 
 /* hum-menu */
 
-.hum-menu li.menu-1 {
-  transform: rotate(45deg)  translateY(3px)  !important;
- 
+.active .menu-1 {
+  transform: rotateZ(28deg);
+  transform-origin: left;
 }
-.hum-menu li.menu-2 {
+
+.active .menu-2 {
+  transform: rotateZ(-28deg) translateY(-4px);
+  transform-origin: right;
+}
+
+.active .menu-3 {
+  display: none;
+  /* transform: translate(5px, 20px); */
+}
+
+.hide {
   display: none;
 }
-.hum-menu li.menu-3 {
-  transform: rotate(-45deg) translateY(-3px) !important;
+
+.nav-list {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  padding: 5em 2em 0;
+  background: var(--navbackground);
+}
+
+.nav-list > li {
+  font-family: var(--work-desc);
+  font-size: 32px;
+  list-style: none;
+  padding: 0.5em 1em;
+  border-bottom: 1px solid var(--link-separator);
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: var(--white);
+  font-weight: bold;
 }
 
 /* navbar section */
@@ -67,22 +98,21 @@ body {
   padding: 1em 2.2em;
 }
 
-header:hover {
-  background: var(--brand-base);
-  color: var(--white);
-}
-
 .hum-menu {
   margin-top: 0.4em;
+  position: absolute;
+  z-index: 2;
+  right: 50px;
 }
 
 .menu {
   background: var(--white);
   list-style: none;
-  width: 1.2em;
+  width: 1.5em;
   height: 0.1em;
   margin-top: 0.2em;
   cursor: pointer;
+  transition: 1s;
 }
 
 /* main section */
