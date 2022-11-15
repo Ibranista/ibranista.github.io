@@ -17,6 +17,8 @@
   --form-text: #979493;
   --text-area: #fbf8f7;
   --link-separator: #6f6c6b;
+  --nav-hidden: #fff5e1;
+  --toggler: #67798e;
   --primary-family: "Crete Round";
   --body-family: "Poppins";
   --general-family: "Roboto";
@@ -36,7 +38,8 @@ body {
 
 .wrapper {
   box-sizing: border-box;
-  background: var(--background) url("../images/background.svg") no-repeat 100% 100%;
+  background: var(--background) url("../images/background.svg") no-repeat 100%
+    100%;
   color: var(--white);
   min-width: 286px;
   height: 100vh;
@@ -45,21 +48,16 @@ body {
 }
 
 /* hum-menu */
-
-.active .menu-1 {
-  transform: rotateZ(28deg);
-  transform-origin: left;
+.active svg > path {
+  d: path(
+    "M0.292893 0.292893C0.683417 -0.0976311 1.31658 -0.0976311 1.70711 0.292893L7 5.58579L12.2929 0.292893C12.6834 -0.0976311 13.3166 -0.0976311 13.7071 0.292893C14.0976 0.683417 14.0976 1.31658 13.7071 1.70711L8.41421 7L13.7071 12.2929C14.0976 12.6834 14.0976 13.3166 13.7071 13.7071C13.3166 14.0976 12.6834 14.0976 12.2929 13.7071L7 8.41421L1.70711 13.7071C1.31658 14.0976 0.683417 14.0976 0.292893 13.7071C-0.0976311 13.3166 -0.0976311 12.6834 0.292893 12.2929L5.58579 7L0.292893 1.70711C-0.0976311 1.31658 -0.0976311 0.683417 0.292893 0.292893Z"
+  );
+  fill: var(--toggler);
 }
-
-.active .menu-2 {
-  transform: rotateZ(-28deg) translateY(-4px);
-  transform-origin: right;
+.active svg {
+  width: 18px;
+  height: 18px;
 }
-
-.active .menu-3 {
-  display: none;
-}
-
 .hide {
   display: none;
 }
@@ -80,13 +78,9 @@ body {
   border-bottom: 1px solid var(--link-separator);
 }
 
-footer ul li a {
-  padding: 0 1.2em 0 0;
-}
-
 .nav-list a {
   text-decoration: none;
-  color: var(--white);
+  color: var(--nav-hidden);
   font-weight: bold;
 }
 
@@ -108,7 +102,7 @@ footer ul li a {
 }
 
 .menu {
-  background: var(--white);
+  background: var(--toggler);
   list-style: none;
   width: 1.5em;
   height: 0.1em;
@@ -150,6 +144,10 @@ footer ul {
   margin-top: 1.2em;
   flex-wrap: wrap;
   padding-bottom: 1.2em;
+}
+
+footer ul li a {
+  padding: 0 1.2em 0 0;
 }
 
 /* social links */
@@ -300,7 +298,8 @@ button.btn-get:active {
 /* about me section */
 
 .about-me {
-  background: var(--background) url(../images/about-background.svg) 100% 100% no-repeat;
+  background: var(--background) url(../images/about-background.svg) 100% 100%
+    no-repeat;
   padding: 7em 2em;
 }
 
