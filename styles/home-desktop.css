@@ -37,6 +37,10 @@
   display: none;
 }
 
+.desktop-nav-links {
+  display: block;
+}
+
 .desktop-nav-links ul {
   display: flex;
 }
