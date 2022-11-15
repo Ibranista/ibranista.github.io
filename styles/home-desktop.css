@@ -33,14 +33,31 @@
   padding: 1em 7.5em;
 }
 
-.hum-menu{
+.hum-menu {
   display: none;
+}
+
+.desktop-nav-links ul {
+  display: flex;
+}
+
+.desktop-nav-links > ul li {
+  list-style: none;
+  padding-right: 32px;
+  font-size: 15px;
+  font-family: var(--work-desc);
+}
+
+.desktop-nav-links > ul > li > a {
+  color: var(--white);
+  text-decoration: none;
 }
 
 /* main section */
 .wrapper {
   box-sizing: border-box;
-  background: var(--background) url("../images/desktop-header.svg") no-repeat 100% 100%;
+  background: var(--background) url("../images/desktop-header.svg") no-repeat
+    100% 100%;
   color: var(--white);
   height: 100vh;
   overflow: hidden;
