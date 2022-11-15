@@ -33,6 +33,10 @@
   padding: 1em 7.5em;
 }
 
+.hum-menu{
+  display: none;
+}
+
 /* main section */
 .wrapper {
   box-sizing: border-box;
