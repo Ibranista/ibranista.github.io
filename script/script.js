@@ -13,5 +13,8 @@ const Toggler = (e) => {
 humMenu.addEventListener("click", Toggler);
 
 for (let i = 0; i < navLinks.length; i++) {
-  navLinks[i].addEventListener("click", () => sideNav.classList.add("hide"));
+  navLinks[i].addEventListener("click", () => {
+    sideNav.classList.add("hide");
+    navWrapper.classList.remove("active");
+  });
 }
