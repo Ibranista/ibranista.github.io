@@ -209,6 +209,9 @@ article.project-wrapper {
   justify-content: flex-end;
 }
 
+.work-2:first-child div.desc-wrapper {
+  display:none;
+}
 .work-2:first-child .btn {
   display: block;
 }
