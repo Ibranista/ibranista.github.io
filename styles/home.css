@@ -38,7 +38,8 @@ body {
 
 .wrapper {
   box-sizing: border-box;
-  background: var(--background) url("../images/background.svg") no-repeat 100% 100%;
+  background: var(--background) url("../images/background.svg") no-repeat 100%
+    100%;
   color: var(--white);
   min-width: 286px;
   height: 100vh;
@@ -52,7 +53,9 @@ body {
 
 /* hum-menu */
 .active svg > path {
-  d: path("M0.292893 0.292893C0.683417 -0.0976311 1.31658 -0.0976311 1.70711 0.292893L7 5.58579L12.2929 0.292893C12.6834 -0.0976311 13.3166 -0.0976311 13.7071 0.292893C14.0976 0.683417 14.0976 1.31658 13.7071 1.70711L8.41421 7L13.7071 12.2929C14.0976 12.6834 14.0976 13.3166 13.7071 13.7071C13.3166 14.0976 12.6834 14.0976 12.2929 13.7071L7 8.41421L1.70711 13.7071C1.31658 14.0976 0.683417 14.0976 0.292893 13.7071C-0.0976311 13.3166 -0.0976311 12.6834 0.292893 12.2929L5.58579 7L0.292893 1.70711C-0.0976311 1.31658 -0.0976311 0.683417 0.292893 0.292893Z");
+  d: path(
+    "M0.292893 0.292893C0.683417 -0.0976311 1.31658 -0.0976311 1.70711 0.292893L7 5.58579L12.2929 0.292893C12.6834 -0.0976311 13.3166 -0.0976311 13.7071 0.292893C14.0976 0.683417 14.0976 1.31658 13.7071 1.70711L8.41421 7L13.7071 12.2929C14.0976 12.6834 14.0976 13.3166 13.7071 13.7071C13.3166 14.0976 12.6834 14.0976 12.2929 13.7071L7 8.41421L1.70711 13.7071C1.31658 14.0976 0.683417 14.0976 0.292893 13.7071C-0.0976311 13.3166 -0.0976311 12.6834 0.292893 12.2929L5.58579 7L0.292893 1.70711C-0.0976311 1.31658 -0.0976311 0.683417 0.292893 0.292893Z"
+  );
   fill: var(--link-separator);
 }
 
@@ -301,7 +304,8 @@ button.btn-get:active {
 /* about me section */
 
 .about-me {
-  background: var(--background) url(../images/about-background.svg) 100% 100% no-repeat;
+  background: var(--background) url(../images/about-background.svg) 100% 100%
+    no-repeat;
   padding: 7em 2em;
 }
 
@@ -429,3 +433,40 @@ footer {
   display: flex;
   justify-content: center;
 }
+
+/* modal */
+
+.modal-wrapper {
+  position: fixed;
+  inset: 0;
+  z-index: 2;
+  min-width: 432px;
+}
+
+.modal-background {
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.23);
+  backdrop-filter: blur(8px);
+  z-index: 4;
+}
+
+.main-modal {
+  position: relative;
+  z-index: 10;
+  background: var(--white);
+  height: 90%;
+  margin: 1em 2em;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+}
+
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1em;
+  font-family: var(--general-family);
+}
+
