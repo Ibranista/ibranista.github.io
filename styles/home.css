@@ -470,3 +470,59 @@ footer {
   font-family: var(--general-family);
 }
 
+.modal-langs {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1em;
+}
+
+.modal-langs li {
+  margin-right: 1em;
+  padding: 0.2em 0.5em;
+  border: 1px solid black;
+  font-family: var(--body-family);
+}
+
+.bottom-wrapper figure {
+  margin-bottom: 1em;
+  width: 100%;
+  font-family: var(--work-desc);
+}
+
+.bottom-wrapper figure img {
+  width: 100%;
+  height: 400px;
+}
+
+.modal-description p {
+  margin-bottom: 1em;
+}
+
+.modal-description button.btn {
+  background-color: var(--brand-base);
+  color: var(--white);
+  font-size: 17px;
+  font-family: var(--general-family);
+  padding: 10px;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  border: none;
+}
+
+.modal-button-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 1em;
+}
+
+.modal-hide {
+  display: none;
+}
+
+.modal-x {
+  cursor: pointer;
+}
