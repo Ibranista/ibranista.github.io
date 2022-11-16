@@ -265,6 +265,7 @@
         action="https://formspree.io/f/xlevordy"
         method="post"
         class="get-in-touch-form"
+        id="getForm"
       >
         <input
           type="text"
@@ -273,7 +274,14 @@
           name="full name"
           required
         />
-        <input type="email" placeholder="Email address" name="email" required />
+        <input
+          type="email"
+          placeholder="Email address"
+          name="email"
+          id="user-email"
+          required
+        />
+        <small class="ib" style="color:red"></small>
         <textarea
           placeholder="Enter text here"
           id=""
