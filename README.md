@@ -18,7 +18,7 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-should know html and css.
+should know html,css and javascript.
 should have a previous knowlege on how linters work. To learn about linters visit (https://github.com/microverseinc/linters-config)
 
 ## Authors
