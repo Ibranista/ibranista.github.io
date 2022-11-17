@@ -1,27 +1,31 @@
-const Work1 = document.querySelector(".work-1");
+/* eslint-disable linebreak-style */
+/* eslint-disable no-trailing-spaces */
+const Work1 = document.querySelector('.work-1'); 
+
 let firstData = [
   {
     id: 7,
-    name: "Multi-Post Stories",
+    name: 'Multi-Post Stories',
     description:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
-    technologies: ["css", "html", "bootstrap", "Ruby"],
-    class: "",
-    featuredImage: "../images/post-stories.png",
-    linkToLiveVersion: "https://ibranista.github.io/",
-    linkToSource: "https://github.com/Ibranista/ibrahim-portfolio",
+    technologies: ['css', 'html', 'bootstrap', 'Ruby'],
+    class: '',
+    featuredImage: '../images/post-stories.png',
+    linkToLiveVersion: 'https://ibranista.github.io/',
+    linkToSource: 'https://github.com/Ibranista/ibrahim-portfolio',
   },
 ];
 
-let firstWork = "";
-let firstModal = "";
+let firstWork = '';
+let firstModal = '';
 
+// eslint-disable-next-line no-restricted-syntax
 for (firstData of firstData) {
   const loop = firstData.technologies
     .map((language) => `<li class="lang-list">${language}</li>`)
-    .join("");
+    .join('');
 
-  let firstElement = `<figure class="story-image">
+  const firstElement = `<figure class="story-image">
   <img
     src=${firstData.featuredImage}
     alt="post story image"
@@ -122,81 +126,82 @@ Work1.innerHTML = firstWork;
 let data = [
   {
     id: 0,
-    name: "Data Dashboard Healthcare",
+    name: 'Data Dashboard Healthcare',
     description:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    technologies: ["html", "bootstrap", "Ruby"],
-    class: "card-2",
-    featuredImage: "../images/card-1.png",
-    linkToLiveVersion: "https://ibranista.github.io/",
-    linkToSource: "https://github.com/Ibranista/ibrahim-portfolio",
+    technologies: ['html', 'bootstrap', 'Ruby'],
+    class: 'card-2',
+    featuredImage: '../images/card-1.png',
+    linkToLiveVersion: 'https://ibranista.github.io/',
+    linkToSource: 'https://github.com/Ibranista/ibrahim-portfolio',
   },
   {
     id: 1,
-    name: "Data Dashboard Healthcare",
+    name: 'Data Dashboard Healthcare',
     description:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    technologies: ["html", "bootstrap", "Ruby"],
-    class: "card-2",
-    featuredImage: "../images/card-2.png",
-    linkToLiveVersion: "https://ibranista.github.io/",
-    linkToSource: "https://github.com/Ibranista/ibrahim-portfolio",
+    technologies: ['html', 'bootstrap', 'Ruby'],
+    class: 'card-2',
+    featuredImage: '../images/card-2.png',
+    linkToLiveVersion: 'https://ibranista.github.io/',
+    linkToSource: 'https://github.com/Ibranista/ibrahim-portfolio',
   },
   {
     id: 2,
-    name: "Website Portfolio",
+    name: 'Website Portfolio',
     description:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    technologies: ["html", "bootstrap", "Ruby"],
-    class: "card-3",
-    featuredImage: "../images/card-3.png",
-    linkToLiveVersion: "https://ibranista.github.io/",
-    linkToSource: "https://github.com/Ibranista/ibrahim-portfolio",
+    technologies: ['html', 'bootstrap', 'Ruby'],
+    class: 'card-3',
+    featuredImage: '../images/card-3.png',
+    linkToLiveVersion: 'https://ibranista.github.io/',
+    linkToSource: 'https://github.com/Ibranista/ibrahim-portfolio',
   },
   {
     id: 3,
-    name: "Professional Art Printing Data",
+    name: 'Professional Art Printing Data',
     description:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    technologies: ["html", "bootstrap", "Ruby"],
-    class: "card-4",
-    featuredImage: "../images/card-4.png",
-    linkToLiveVersion: "hthttps://ibranista.github.io/",
-    linkToSource: "https://github.com/Ibranista/ibrahim-portfolio",
+    technologies: ['html', 'bootstrap', 'Ruby'],
+    class: 'card-4',
+    featuredImage: '../images/card-4.png',
+    linkToLiveVersion: 'hthttps://ibranista.github.io/',
+    linkToSource: 'https://github.com/Ibranista/ibrahim-portfolio',
   },
   {
     id: 4,
-    name: "Data Dashboard Healthcare",
+    name: 'Data Dashboard Healthcare',
     description:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    technologies: ["html", "bootstrap", "Ruby"],
-    class: "card-5",
-    featuredImage: "../images/card-3.png",
-    linkToLiveVersion: "hthttps://ibranista.github.io/",
-    linkToSource: "https://github.com/Ibranista/ibrahim-portfolio",
+    technologies: ['html', 'bootstrap', 'Ruby'],
+    class: 'card-5',
+    featuredImage: '../images/card-3.png',
+    linkToLiveVersion: 'hthttps://ibranista.github.io/',
+    linkToSource: 'https://github.com/Ibranista/ibrahim-portfolio',
   },
   {
     id: 5,
-    name: "Website Portfolio is coming",
+    name: 'Website Portfolio is coming',
     description:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    technologies: ["html", "bootstrap", "Ruby"],
-    class: "card-6",
-    featuredImage: "../images/card-4.png",
-    linkToLiveVersion: "hthttps://ibranista.github.io/",
-    linkToSource: "https://github.com/Ibranista/ibrahim-portfolio",
+    technologies: ['html', 'bootstrap', 'Ruby'],
+    class: 'card-6',
+    featuredImage: '../images/card-4.png',
+    linkToLiveVersion: 'hthttps://ibranista.github.io/',
+    linkToSource: 'https://github.com/Ibranista/ibrahim-portfolio',
   },
 ];
 
-let works = "";
-let modal = "";
+let works = '';
+let modal = '';
 
+// eslint-disable-next-line no-restricted-syntax
 for (data of data) {
   const loop = data.technologies
     .map((language) => `<li class="lang-list">${language}</li>`)
-    .join("");
+    .join('');
 
-  let element = `   <div class="work-2">
+  const element = `   <div class="work-2">
   <div class="desc-wrapper cards ${data.class}">
     <h2 class="work-description">${data.name}</h2>
     <p class="story-detail">
@@ -213,7 +218,7 @@ ${loop}
 
   works += element;
 
-  let modalElement = `
+  const modalElement = `
  <div class="main-modal ${data.id}" id="main-modal">
  <div class="top-wrapper">
    <div class="top-nav">
@@ -286,57 +291,55 @@ ${loop}
  `;
   modal += modalElement;
 }
-const RecentWorks = document.querySelector(".project-wrapper");
+const RecentWorks = document.querySelector('.project-wrapper');
 RecentWorks.innerHTML = works;
-const modalBackground = document.querySelector("#modal-background");
-const modalBackground1 = document.querySelector("#modal-background1");
+const modalBackground = document.querySelector('#modal-background');
+const modalBackground1 = document.querySelector('#modal-background1');
 // modalBackground.insertAdjacentHTML("afterend", modal);
 modalBackground.innerHTML = modal;
 modalBackground1.innerHTML = firstModal;
 // modal
-const modalWrapper = document.querySelector("#modal-wrapper");
-const mainModal = document.querySelectorAll("#main-modal");
-const modalToggler = document.querySelectorAll(".btn-project");
-const modalCloser = document.querySelectorAll(".modal-x");
-const modalWrapper1 = document.querySelector("#modal-wrapper1");
-const mainModal1 = document.querySelectorAll("#main-modal1");
-const modalToggler1 = document.querySelectorAll(".btn-project1");
+const modalWrapper = document.querySelector('#modal-wrapper');
+const mainModal = document.querySelectorAll('#main-modal');
+const modalToggler = document.querySelectorAll('.btn-project');
+const modalCloser = document.querySelectorAll('.modal-x');
+const modalWrapper1 = document.querySelector('#modal-wrapper1');
+const mainModal1 = document.querySelectorAll('#main-modal1');
+const modalToggler1 = document.querySelectorAll('.btn-project1');
 modalToggler.forEach((item) => {
-  item.addEventListener("click", (e) => {
+  item.addEventListener('click', (e) => {
     e.preventDefault();
-    let id = e.target.id;
+    const { id } = e.target;
     mainModal.forEach((item) => {
       if (!item.classList.contains(id)) {
-        modalWrapper.classList.remove("modal-hide");
-        item.classList.add("modal-hide");
+        modalWrapper.classList.remove('modal-hide');
+        item.classList.add('modal-hide');
       }
     });
   });
 });
 modalToggler1.forEach((item) => {
-  console.log(item);
-  item.addEventListener("click", (e) => {
+  item.addEventListener('click', (e) => {
     e.preventDefault();
-    let id = e.target.id;
+    const { id } = e.target;
     mainModal1.forEach((item) => {
-      console.log(item);
       if (item.classList.contains(id)) {
-        modalWrapper1.classList.remove("modal-hide");
+        modalWrapper1.classList.remove('modal-hide');
         // item.classList.add("modal-hide");
       }
     });
   });
 });
 
-modalCloser.forEach((item, id) => {
-  item.addEventListener("click", () => {
-    modalWrapper.classList.add("modal-hide");
-    modalWrapper1.classList.add("modal-hide");
+modalCloser.forEach((item) => {
+  item.addEventListener('click', () => {
+    modalWrapper.classList.add('modal-hide');
+    modalWrapper1.classList.add('modal-hide');
     mainModal.forEach((item) => {
-      item.classList.remove("modal-hide");
+      item.classList.remove('modal-hide');
     });
     mainModal1.forEach((item) => {
-      item.classList.remove("modal-hide");
+      item.classList.remove('modal-hide');
     });
   });
 });
