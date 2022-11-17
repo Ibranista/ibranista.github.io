@@ -193,33 +193,43 @@ article.project-wrapper {
 }
 
 .work-2:not(:first-child) div.btn > button.btn-project {
-  display: none;
+  /* display: none; */
 }
 
 /* cards section */
 
 .work-2:first-child {
-  background: skyblue url(../images/card-1.png) no-repeat;
+  /* background: skyblue url(../images/card-1.png) no-repeat;
   background-size: cover;
   color: var(--white);
   padding-bottom: 0;
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: flex-end; */
 }
 
 .work-2:first-child div.desc-wrapper {
-  display: none;
+  /* display: none; */
 }
 
 .work-2:first-child .btn {
   display: block;
 }
 
-.work-2 .card-2 {
-  background: url(../images/card-2.png) no-repeat;
-  background-size: cover;
+.cards {
+  background: url(../images/card-1.png) !important;
+  background-size: cover !important;
+}
+
+.work-2 .work-description,
+.work-2 .story-detail {
+  display: none;
+}
+
+.work-2:hover .card-2 {
+  background: url(../images/card-2.png) no-repeat !important;
+  background-size: cover !important;
   color: var(--white);
 }
 
