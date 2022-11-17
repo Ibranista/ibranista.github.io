@@ -3,17 +3,18 @@ let firstData = [
   {
     id: 7,
     name: "Multi-Post Stories",
-    description:"A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
-    technologies: ["css","html", "bootstrap", "Ruby"],
+    description:
+      "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
+    technologies: ["css", "html", "bootstrap", "Ruby"],
     class: "",
     featuredImage: "../images/post-stories.png",
-    linkToLiveVersion: 'https://ibranista.github.io/',
-    linkToSource: 'https://github.com/Ibranista/ibrahim-portfolio',
+    linkToLiveVersion: "https://ibranista.github.io/",
+    linkToSource: "https://github.com/Ibranista/ibrahim-portfolio",
   },
-]
+];
 
-let firstWork ="";
-let firstModal ="";
+let firstWork = "";
+let firstModal = "";
 
 for (firstData of firstData) {
   const loop = firstData.technologies
@@ -116,19 +117,19 @@ ${loop}
  `;
 }
 
-Work1.innerHTML = firstWork
-
+Work1.innerHTML = firstWork;
 
 let data = [
   {
     id: 0,
     name: "Data Dashboard Healthcare",
-    description:"A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+    description:
+      "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
     technologies: ["html", "bootstrap", "Ruby"],
     class: "card-2",
     featuredImage: "../images/card-1.png",
-    linkToLiveVersion: 'https://ibranista.github.io/',
-    linkToSource: 'https://github.com/Ibranista/ibrahim-portfolio',
+    linkToLiveVersion: "https://ibranista.github.io/",
+    linkToSource: "https://github.com/Ibranista/ibrahim-portfolio",
   },
   {
     id: 1,
@@ -138,8 +139,8 @@ let data = [
     technologies: ["html", "bootstrap", "Ruby"],
     class: "card-2",
     featuredImage: "../images/card-2.png",
-      linkToLiveVersion: 'https://ibranista.github.io/',
-    linkToSource: 'https://github.com/Ibranista/ibrahim-portfolio',
+    linkToLiveVersion: "https://ibranista.github.io/",
+    linkToSource: "https://github.com/Ibranista/ibrahim-portfolio",
   },
   {
     id: 2,
@@ -149,8 +150,8 @@ let data = [
     technologies: ["html", "bootstrap", "Ruby"],
     class: "card-3",
     featuredImage: "../images/card-3.png",
-      linkToLiveVersion: 'https://ibranista.github.io/',
-    linkToSource: 'https://github.com/Ibranista/ibrahim-portfolio',
+    linkToLiveVersion: "https://ibranista.github.io/",
+    linkToSource: "https://github.com/Ibranista/ibrahim-portfolio",
   },
   {
     id: 3,
@@ -159,9 +160,9 @@ let data = [
       "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
     technologies: ["html", "bootstrap", "Ruby"],
     class: "card-4",
-  featuredImage:"../images/card-4.png",
-    linkToLiveVersion: 'hthttps://ibranista.github.io/',
-    linkToSource: 'https://github.com/Ibranista/ibrahim-portfolio',
+    featuredImage: "../images/card-4.png",
+    linkToLiveVersion: "hthttps://ibranista.github.io/",
+    linkToSource: "https://github.com/Ibranista/ibrahim-portfolio",
   },
   {
     id: 4,
@@ -170,10 +171,9 @@ let data = [
       "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
     technologies: ["html", "bootstrap", "Ruby"],
     class: "card-5",
-  featuredImage:"../images/card-3.png",
-    linkToLiveVersion: 'hthttps://ibranista.github.io/',
-    linkToSource: 'https://github.com/Ibranista/ibrahim-portfolio',
-
+    featuredImage: "../images/card-3.png",
+    linkToLiveVersion: "hthttps://ibranista.github.io/",
+    linkToSource: "https://github.com/Ibranista/ibrahim-portfolio",
   },
   {
     id: 5,
@@ -182,9 +182,9 @@ let data = [
       "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
     technologies: ["html", "bootstrap", "Ruby"],
     class: "card-6",
-  featuredImage:"../images/card-4.png",
-    linkToLiveVersion: 'hthttps://ibranista.github.io/',
-    linkToSource: 'https://github.com/Ibranista/ibrahim-portfolio',
+    featuredImage: "../images/card-4.png",
+    linkToLiveVersion: "hthttps://ibranista.github.io/",
+    linkToSource: "https://github.com/Ibranista/ibrahim-portfolio",
   },
 ];
 
@@ -300,18 +300,43 @@ const modalToggler = document.querySelectorAll(".btn-project");
 const modalCloser = document.querySelectorAll(".modal-x");
 const modalWrapper1 = document.querySelector("#modal-wrapper1");
 const mainModal1 = document.querySelectorAll("#main-modal1");
-const modalToggler1 = document.querySelectorAll('.btn-project1')
-console.log(modalToggler.length);
+const modalToggler1 = document.querySelectorAll(".btn-project1");
 modalToggler.forEach((item) => {
-  console.log(item);
   item.addEventListener("click", (e) => {
     e.preventDefault();
     let id = e.target.id;
-    mainModal.forEach((item) => {console.log(item);
+    mainModal.forEach((item) => {
       if (!item.classList.contains(id)) {
         modalWrapper.classList.remove("modal-hide");
         item.classList.add("modal-hide");
       }
+    });
+  });
+});
+modalToggler1.forEach((item) => {
+  console.log(item);
+  item.addEventListener("click", (e) => {
+    e.preventDefault();
+    let id = e.target.id;
+    mainModal1.forEach((item) => {
+      console.log(item);
+      if (item.classList.contains(id)) {
+        modalWrapper1.classList.remove("modal-hide");
+        // item.classList.add("modal-hide");
+      }
+    });
+  });
+});
+
+modalCloser.forEach((item, id) => {
+  item.addEventListener("click", () => {
+    modalWrapper.classList.add("modal-hide");
+    modalWrapper1.classList.add("modal-hide");
+    mainModal.forEach((item) => {
+      item.classList.remove("modal-hide");
+    });
+    mainModal1.forEach((item) => {
+      item.classList.remove("modal-hide");
     });
   });
 });
