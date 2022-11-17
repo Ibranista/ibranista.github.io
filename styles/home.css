@@ -306,7 +306,7 @@ button.btn-get:active {
 
 .work-2:hover .work-2 .work-description,
 .work-2:hover .work-2 .story-detail,
-.work-2:hover .langs {
+.work-2:hover .work-2 .langs {
   padding: 0.5em 1em !important;
   display: flex !important;
 }
