@@ -1,7 +1,7 @@
 let data = [
   {
     id: 0,
-    name: "no data",
+    name: "",
     description: "",
     technologies: [],
     class: "",
