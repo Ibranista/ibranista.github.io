@@ -61,7 +61,6 @@ const onChange = (e) => {
 let fName = localStorage.getItem("fname");
 let Comment = localStorage.getItem("comment");
 let Email = localStorage.getItem("email");
-console.log(Comment);
 
 if (Name || Comment || Email) {
   fullName.value = fName;

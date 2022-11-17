@@ -60,7 +60,8 @@
 /* main section */
 .wrapper {
   box-sizing: border-box;
-  background: var(--background) url("../images/desktop-header.svg") no-repeat 100% 100%;
+  background: var(--background) url("../images/desktop-header.svg") no-repeat
+    100% 100%;
   color: var(--white);
   height: 100vh;
   overflow: hidden;
@@ -192,27 +193,6 @@ article.project-wrapper {
   justify-content: flex-end;
 }
 
-.work-2:not(:first-child) div.btn > button.btn-project {
-  /* display: none; */
-}
-
-/* cards section */
-
-.work-2:first-child {
-  /* background: skyblue url(../images/card-1.png) no-repeat;
-  background-size: cover;
-  color: var(--white);
-  padding-bottom: 0;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end; */
-}
-
-.work-2:first-child div.desc-wrapper {
-  /* display: none; */
-}
-
 .work-2:first-child .btn {
   display: block;
 }
@@ -223,7 +203,7 @@ article.project-wrapper {
 }
 
 .work-2 .work-description,
-.work-2 .story-detail {
+.work-2 p.story-detail {
   display: none;
 }
 
@@ -233,27 +213,27 @@ article.project-wrapper {
   color: var(--white);
 }
 
-.work-2 .card-3 {
-  background: url(../images/card-3.png) no-repeat;
-  background-size: cover;
+.work-2:hover .card-3 {
+  background: url(../images/card-3.png) no-repeat !important;
+  background-size: cover !important;
   color: var(--white);
 }
 
-.work-2 .card-4 {
-  background: url(../images/card-4.png) no-repeat;
-  background-size: cover;
+.work-2:hover .card-4 {
+  background: url(../images/card-4.png) no-repeat !important;
+  background-size: cover !important;
   color: var(--white);
 }
 
 .work-2 .card-5 {
-  background: url(../images/card-2.png) no-repeat;
-  background-size: cover;
+  background: url(../images/card-2.png) no-repeat !important;
+  background-size: cover !important;
   color: var(--white);
 }
 
 .work-2 .card-6 {
-  background: url(../images/card-3.png) no-repeat;
-  background-size: cover;
+  background: url(../images/card-3.png) no-repeat !important;
+  background-size: cover !important;
   color: var(--white);
 }
 
@@ -344,4 +324,38 @@ footer {
 .modal-description button.btn {
   padding: 10px;
   width: 10em;
+}
+
+/* work hover */
+
+.work-2:hover .cards .work-description {
+  font-family: var(--primary-family);
+  font-weight: 400;
+  font-size: 2em;
+  align-self: flex-start;
+  padding: 0.5em 1em;
+  display: block !important;
+}
+.work-2:hover .cards p.story-detail {
+  font-family: var(--work-desc);
+  display: block;
+  padding: 0 1em;
+}
+.work-2:hover .recent-works ul.langs {
+  list-style: none;
+  display: flex;
+  align-self: flex-start;
+  font-family: var(--work-desc);
+  font-size: 0.9em;
+  font-weight: 500;
+  padding: 0.7em 0;
+  overflow: hidden;
+}
+.work-2:hover .langs {
+  padding: 0.5em 1em !important;
+  display: flex !important;
+}
+
+.recent-works .work-2 ul.langs {
+  display: none;
 }

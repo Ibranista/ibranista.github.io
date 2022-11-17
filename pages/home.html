@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" media="screen" href="../styles/home.css" />
     <script src="../script/script.js" defer></script>
-    <!-- <script src="../script/api.js" defer></script> -->
+    <script src="../script/api.js" defer></script>
     <link
       media="screen and (min-width: 768px)"
       rel="stylesheet"
@@ -16,8 +16,11 @@
   </head>
 
   <body>
-    <section class="modal-wrapper modal-hide">
-      <div class="modal-background"></div>
+    <section class="modal-wrapper modal-hide" id="modal-wrapper">
+      <div class="modal-background" id="modal-background"></div>
+    </section>
+    <section class="modal-wrapper modal-hide" id="modal-wrapper1">
+      <div class="modal-background" id="modal-background1"></div>
     </section>
     <main class="wrapper nav-wrapper">
       <header class="header">
@@ -184,7 +187,7 @@
       <article class="recent-works">
         <h1 class="work-hero">My Recent Works</h1>
         <section class="work-1">
-          <figure class="story-image">
+          <!-- <figure class="story-image">
             <img
               src="../images/post-stories.png"
               alt="post story image"
@@ -208,7 +211,7 @@
             <div class="btn multi-post">
               <button class="btn-projects">See Project</button>
             </div>
-          </article>
+          </article> -->
         </section>
         <article class="project-wrapper">
           <!-- <div class="work-2">
@@ -216,22 +219,6 @@
               <button class="btn-project">See Project</button>
             </div>
           </div> -->
-          <div class="work-2">
-            <div class="desc-wrapper cards card-2">
-              <h2 class="work-description">${data.name}</h2>
-              <p class="story-detail">
-      A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard
-              </p>
-              <ul class="langs">
-             <li class="lang-list">html</li>
-             <li class="lang-list">html</li>
-             <li class="lang-list">html</li>
-              </ul>
-              <div class="btn">
-                <button class="btn-project modal">See Project</button>
-              </div>
-            </div>
-          </div>
           <div class="work-2"></div>
           <div class="work-2"></div>
           <div class="work-2"></div>
