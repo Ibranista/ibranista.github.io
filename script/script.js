@@ -2,7 +2,7 @@ const humMenu = document.querySelector(".hum-menu");
 const navWrapper = document.querySelector(".nav-wrapper");
 const sideNav = document.querySelector(".side-nav");
 const navLinks = document.querySelectorAll(".nav-link");
-let message = document.querySelector(".ib");
+let message = document.querySelector(".error");
 const Toggler = (e) => {
   e.preventDefault();
   navWrapper.classList.toggle("active");

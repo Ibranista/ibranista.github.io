@@ -526,3 +526,7 @@ footer {
 .modal-x {
   cursor: pointer;
 }
+
+.error {
+  color: red;
+}
