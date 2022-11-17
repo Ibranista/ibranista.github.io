@@ -60,8 +60,7 @@
 /* main section */
 .wrapper {
   box-sizing: border-box;
-  background: var(--background) url("../images/desktop-header.svg") no-repeat
-    100% 100%;
+  background: var(--background) url("../images/desktop-header.svg") no-repeat 100% 100%;
   color: var(--white);
   height: 100vh;
   overflow: hidden;
@@ -336,11 +335,17 @@ footer {
   padding: 0.5em 1em;
   display: block !important;
 }
+
 .work-2:hover .cards p.story-detail {
   font-family: var(--work-desc);
   display: block;
   padding: 0 1em;
 }
+
+.recent-works .work-2 ul.langs {
+  display: none;
+}
+
 .work-2:hover .recent-works ul.langs {
   list-style: none;
   display: flex;
@@ -351,11 +356,8 @@ footer {
   padding: 0.7em 0;
   overflow: hidden;
 }
+
 .work-2:hover .langs {
   padding: 0.5em 1em !important;
   display: flex !important;
-}
-
-.recent-works .work-2 ul.langs {
-  display: none;
 }
