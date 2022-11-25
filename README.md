@@ -18,7 +18,7 @@ To visit the portfolio page please visit https://ibranista.github.io/
 
 ### Prerequisites
 
-should know html and css.
+should know html,css and javascript.
 should have a previous knowlege on how linters work. To learn about linters visit (https://github.com/microverseinc/linters-config)
 
 ## Authors
